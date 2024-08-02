@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PassVault</title>
+    <script type="module" src="./main.js" defer></script>
+  </head>
+
+  <body>
+    <div id="app">
+      <div id="enter-vault-view">
+        <h1 class="h">PassVault</h1>
+        <form id="enter-form">
+          <input
+            class="mkey-input"
+            id="enter-mkey-input"
+            placeholder="Enter Master-Key"
+          />
+          <button id="enter-vault-button" type="submit">Enter Vault!</button>
+        </form>
+        <p id="p1">Don't have a vault?</p>
+        <a id="create-vault-link" href="#">Create one!</a>
+        <p id="enter-form-message-display"></p>
+      </div>
+
+      <div id="create-vault-view" style="display: none">
+        <h1 class="h">PassVault</h1>
+        <form id="create-form">
+          <label for="create-mkey-input"></label>
+          <input
+            class="mkey-input"
+            id="create-mkey-input"
+            placeholder="Enter Master-Key"
+          />
+          <button id="create-vault-button" type="submit">Create Vault!</button>
+        </form>
+        <p id="create-form-message-display"></p>
+      </div>
+
+      <div id="main-vault-view" style="display: none">
+        <button id="add-entry-button" label="Add new entry">+</button>
+      </div>
+    </div>
+  </body>
+</html>
